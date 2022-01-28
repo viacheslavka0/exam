@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Rosario:wght@700&display=swap');
+
+:root {
+  --button_color:#09A66D;
+  }
+
+.header_{
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   width: 100%;
+}
+
+.planet{
+   
+}
+
+.buttons_h{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    display: inline;
+    font-family: DM Sans ;
+
+    margin-right: 1%;
+}
+.list{
+    width: 24%;
+}
+a{
+    text-decoration: none;
+
+    font-family:  DM Sans;
+}
+a.button{
+    border: 1px solid transparent; 
+    background-color: var(--button_color);
+    width: 50%; 
+    height: 40px; 
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: center;
+   
+   
+
+    justify-content: center;
+}
+p{
+    font-family: DM Sans;
+}
+h1{
+    font-family: Rosario;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.container{
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    text-align: center;
+}
+
+.leaves{
+    margin-top: -10%;
+}
+
+.arrow{
+    position: relative;
+    vertical-align: middle;
+    margin-left: 2%;
+}
