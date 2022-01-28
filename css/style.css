@@ -2,6 +2,7 @@
 
 :root {
   --button_color:#09A66D;
+  --pcolor:#222222;
   }
 
 .header_{
@@ -9,14 +10,13 @@
     justify-content: space-around;
    align-items: center;
    width: 100%;
+   
+   background-color: white;
 }
 
-.planet{
-   
-}
 
 .buttons_h{
-    width: 20%;
+    width: 25%;
     display: flex;
     justify-content: space-around;
 }
@@ -25,19 +25,26 @@ li{
     font-family: DM Sans ;
 
     margin-right: 1%;
+
+    color: var(--pcolor);
 }
 .list{
     width: 24%;
+    
 }
 a{
     text-decoration: none;
 
     font-family:  DM Sans;
+
+    color:var(--pcolor);
 }
 a.button{
     border: 1px solid transparent; 
     background-color: var(--button_color);
-    width: 50%; 
+    
+    width: 150%; 
+    max-width: 150px;
     height: 40px; 
     border-radius: 20px;
     display: flex;
@@ -49,13 +56,22 @@ a.button{
 
     justify-content: center;
 }
+
+
+body{
+    background-color: #F3FBF8;
+}
+
 p{
     font-family: DM Sans;
+    color: #555555;
 }
 h1{
     font-family: Rosario;
     font-weight: bold;
     font-size: 3em;
+
+    color: var(--pcolor);
 }
 
 .container{
@@ -68,6 +84,7 @@ h1{
 
 .leaves{
     margin-top: -10%;
+    
 }
 
 .arrow{
@@ -75,3 +92,30 @@ h1{
     vertical-align: middle;
     margin-left: 2%;
 }
+
+.order{
+    font-weight: bold;
+}
+
+a:hover{
+    color: #29f3f3;
+}
+
+a.button:hover {
+    background-color: #067e52;
+  }
+
+  @media (max-width:600px) {
+    .header_{
+        flex-direction: column;
+        align-content: space-around;
+    }
+    
+    .leaves{
+        width:100% ;
+    }
+    .buttons_h{
+        margin-top: 5%;
+        width: 60%;
+    }
+  }
